@@ -1,0 +1,15 @@
+app:
+  name: summit-photo-generator-app
+  namespace: summit
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/summit-photo-generator
+  org: WindTurbineInc
+  name: summit-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: summit/photo-generator-app
+  tag: latest
